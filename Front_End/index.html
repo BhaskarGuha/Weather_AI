@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyPulse – Your Weather, Your Way</title>
+</head>
+
+<!-- favicon -->
+
+<link rel="icon" type="image/png" href="Favicon.png"> 
+
+<!--Google font links-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!--CSS Link -->
+
+<link rel="stylesheet" href="style.css">
+
+
+<!--Js Link -->
+<script src="script.js" type="module"></script>
+
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src = "assets/images/SkyPulse.png" width ="150" height="auto" alt = "logo">
+            </a>
+
+            <div class="search-view" data-search-view>
+        
+
+                <div class="search-wrapper">
+                    <input type="search" name="search" placeholder="Search city..." autocomplete="off"
+                    class="search-field" data-serach-field>
+                
+                    <span class="icon">search</span>
+                    <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+                    <span class="icon">arrow_back</span>
+                    </button>
+                </div> 
+                
+                <div class="search-result" data-search-result>
+                    <ul class="view-list">
+                       
+                        <li class="view-item">
+                            <span class="icon">location_on</span>
+                            
+                            <div>
+                                <p class="item-title">London</p>
+                                <p class="label-2 item-subtitle">State of London, GB</p>
+                            </div>
+
+                            <a href="#" class="item-link has-state" data-search-toggler></a>
+                            
+                        </li>
+
+                    </ul>
+
+                </div>
+                
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn has-state" aria-lebel="open search" data-search-toggler>
+                <span class="icon">Search</span>
+                </button>
+                
+                <a href="#/current-location" class="btn-primary has-state" data-current-location>
+                <span class="icon">my_location</span>
+                <span class="current-location">Current Location</span>
+                </a>
+            </div>
+        
+        
+        </div>    
+    </header>
+</body>
+</html>
