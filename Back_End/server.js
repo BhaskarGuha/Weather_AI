@@ -3,11 +3,16 @@ require("dotenv").config();
 
 // import express framework
 const express = require("express")
+const connectDB = require("./config/db");
 
 //create a express app
 const app = express();
 
 const weatherRoutes = require("./weatherRoutes");
+
+//connect databse
+
+connectDB();
 
 // Middleware to parse JSON data
 app.use(express.json());
